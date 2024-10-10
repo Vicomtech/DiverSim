@@ -24,4 +24,4 @@ If you use DiverSim in your research, publications, or academic work, please cit
 For any questions or inquiries regarding the RailSceneSet dataset, please contact mhormaetxea@vicomtech.org or jainiguez@vicomtech.org.
 
 ## Download links
-TODO: Añadir links de descarga
+TODO: Add DiverSim executable download link
