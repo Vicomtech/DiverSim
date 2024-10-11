@@ -21,7 +21,7 @@ DiverSim was generated employing the AirSim Simulator on Unreal Engine 5 as part
 If you use DiverSim in your research, publications, or academic work, please cite this Github repository.
 
 ## Contact
-For any questions or inquiries regarding the RailSceneSet dataset, please contact jainiguez@vicomtech.org or mhormaetxea@vicomtech.org.
+For any questions or inquiries regarding the DiverSim simulation tool, please contact jainiguez@vicomtech.org or mhormaetxea@vicomtech.org.
 
 ## Download links
 You can download the simulator executable here:
