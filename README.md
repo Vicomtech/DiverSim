@@ -24,4 +24,5 @@ If you use DiverSim in your research, publications, or academic work, please cit
 For any questions or inquiries regarding the RailSceneSet dataset, please contact mhormaetxea@vicomtech.org or jainiguez@vicomtech.org.
 
 ## Download links
-TODO: Add DiverSim executable download link
+You can download the simulator executable here:
+[https://opendatasets.vicomtech.org/di21-diversim/ceb2d330](https://opendatasets.vicomtech.org/di21-diversim/ceb2d330)
