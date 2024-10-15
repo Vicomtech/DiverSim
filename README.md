@@ -22,7 +22,7 @@ A file called [`simulation_settings.json`](simulation_settings.json) is placed n
 | `spawnPolicy` | Decides how agents are spawned. The different modes are <br /> - `random` Agents are spawned randomly regardless of class. <br /> - `DisabilityNormalized` Each disability class is given a chance to spawn, indicated by the `spawnChanceDisability` field. <br /> - `DisabilityNormalizedUnique` Same as above but all pedestrian classes are unique, no two same pedestrians with the same characteristics will spawn.|
 | `spawnChanceDisability` | How likely it is for a disability class to spawn. <br /> Values are normalized afterwards, so `(A = 1, B = 2)` is the same as `(A = 0.33, B = 0.66)`. |
 | `carDensity` | Percentage of car slots occupied by cars (parking, road, etc). Range between `0` and `1`, and `-1`for random. |
-| `cameraPosition` | 3D Vector that determines the spawn position of the camera |
+| `cameraPosition` | 3D Vector that determines the reference spawn position of the camera (coordinate origin). |
 
 ## Simulation Controls
 
