@@ -9,20 +9,22 @@ To understand how to perform a recording with the DiverSim tool, please refer to
 
 ## Simulation Settings
 
-A file called [`simulation_settings.json`](simulation_settings.json) is placed next to the packaged executable (see download link below) that controls different variables during the simulation. This file can be modified either manually or using the Python API, as shown in the *example_record.py* script.
+A file called `simulation_settings.json` is placed next to the packaged executable (see download link below) that controls different variables during the simulation. This file can be modified either manually or using the Python API, as shown in the *example_record.py* script.
 
 | Json field | Description |
 | --- | --- | 
+| `map` | Chooses between the different scenarios for the simulation. Options are:  <br /> - `ScenarioCrossing` or `0` <br /> - `ScenarioParking` or `1` <br /> - `ScenarioPickup` or `2` (not available yet)|  
 | `accelerateBeginning` | Accelerates the speed of the simulation at the beginning for 2 seconds. This ensures slow walking classes appear crossing the street. | 
 | `timeScale` | Controls the speed of the pedestrian simulation. `1` is normal speed, `0.5` is half speed, `2` is double speed.| 
 | `timeOfDay` | Position of the sun/moon. Value goes from `0` to `2400` (hundreths of an hour). Car lights and street lights turn off during the day, between `[650, 1750]` which are sunrise and sunset, respectively. |
 | `sunAngle` | Angle of the sun around z-axis. Range between `0` and `360`. If set to `-1`, the angle will be random on every simulation (very useful for generating diverse light conditions). |
-| `weather` | Controls the appearence of the sky. Current options are: `Clear`, `Cloudy`, `Overcast`, `FogLow`, `FogHigh`, `RainLow`, `RainHigh`, `SnowLow`, `SnowHigh`.  |
+| `weather` | Controls the appearence of the sky. Current options are: `Sunshine`, `Cloudy`, `Overcast`, `FogLow`, `FogHigh`, `RainLow`, `RainHigh`, `SnowLow`, `SnowHigh`.  |
 | `maxAgentCount` | Maximum number of agents allowed to exist concurrently in the simulation. |
 | `spawnPolicy` | Decides how agents are spawned. The different modes are <br /> - `random` Agents are spawned randomly regardless of class. <br /> - `DisabilityNormalized` Each disability class is given a chance to spawn, indicated by the `spawnChanceDisability` field. <br /> - `DisabilityNormalizedUnique` Same as above but all pedestrian classes are unique, no two same pedestrians with the same characteristics will spawn.|
 | `spawnChanceDisability` | How likely it is for a disability class to spawn. <br /> Values are normalized afterwards, so `(A = 1, B = 2)` is the same as `(A = 0.33, B = 0.66)`. |
 | `carDensity` | Percentage of car slots occupied by cars (parking, road, etc). Range between `0` and `1`, and `-1`for random. |
-| `cameraPosition` | 3D Vector that determines the reference spawn position of the camera (coordinate origin). |
+| `cameraPosition` | 3D Vector that determines the spawn position of the camera |
+
 
 ## Simulation Controls
 
