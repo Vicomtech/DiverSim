@@ -50,7 +50,20 @@ As a user of DiverSim, it is your responsibility to comply with the terms specif
 DiverSim was generated employing the AirSim Simulator on Unreal Engine 5 as part of the European project AWARE2ALL.
 
 ## Citation
-If you use DiverSim in your research, publications, or academic work, please cite this Github repository.
+If you use DiverSim in your research, publications, or academic work, please cite the following paper:
+```
+@inproceedings{IniguezDeGordoa2025,
+  author    = {Iñiguez de Gordoa, J. A. and Hormaetxea, M. and Nieto, M. and Vélez, G. and Mujika, A.},
+  title     = {DiverSim: A Customizable Simulation Tool to Generate Diverse Vulnerable Road User Datasets},
+  booktitle = {Proceedings of the 11th International Conference on Vehicle Technology and Intelligent Transport Systems},
+  year      = {2025},
+  isbn      = {978-989-758-745-0},
+  issn      = {2184-495X},
+  pages     = {17-24}
+}
+```
+Or in Harvard Citation Format:
+> Iñiguez de Gordoa, J. A.; Hormaetxea, M.; Nieto, M.; Vélez, G. and Mujika, A. (2025). DiverSim: A Customizable Simulation Tool to Generate Diverse Vulnerable Road User Datasets.  In _Proceedings of the 11th International Conference on Vehicle Technology and Intelligent Transport Systems_, ISBN 978-989-758-745-0, ISSN 2184-495X, pages 17-24.    
 
 ## Contact
 For any questions or inquiries regarding the DiverSim simulation tool, please contact jainiguez@vicomtech.org or mhormaetxea@vicomtech.org.
