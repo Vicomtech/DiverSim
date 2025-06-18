@@ -20,7 +20,7 @@ A file called `simulation_settings.json` is placed next to the packaged executab
 | `sunAngle` | Angle of the sun around z-axis. Range between `0` and `360`. If set to `-1`, the angle will be random on every simulation (very useful for generating diverse light conditions). |
 | `weather` | Controls the appearence of the sky. Current options are: `Sunshine`, `Cloudy`, `Overcast`, `FogLow`, `FogHigh`, `RainLow`, `RainHigh`, `SnowLow`, `SnowHigh`.  |
 | `maxAgentCount` | Maximum number of agents allowed to exist concurrently in the simulation. |
-| `spawnPolicy` | Decides how agents are spawned. The different modes are <br /> - `random` Agents are spawned randomly regardless of class. <br /> - `DisabilityNormalized` Each disability class is given a chance to spawn, indicated by the `spawnChanceDisability` field. <br /> - `DisabilityNormalizedUnique` Same as above but all pedestrian classes are unique, no two same pedestrians with the same characteristics will spawn.|
+| `spawnPolicy` | Decides how agents are spawned. The different modes are <br /> - `random` Agents are spawned randomly regardless of class. <br /> - `DisabilityNormalized` Each disability class is given a chance to spawn, indicated by the `spawnChanceDisability` field. <br /> - `DisabilityNormalizedUnique` Same as above but all pedestrian classes are unique, no two same pedestrians with the same characteristics will spawn. This is the policy that should be selected for the ground truth 2D bounding box annotation.|
 | `spawnChanceDisability` | How likely it is for a disability class to spawn. <br /> Values are normalized afterwards, so `(A = 1, B = 2)` is the same as `(A = 0.33, B = 0.66)`. |
 | `carDensity` | Percentage of car slots occupied by cars (parking, road, etc). Range between `0` and `1`, and `-1`for random. |
 | `cameraPosition` | 3D Vector that determines the spawn position of the camera |
@@ -50,11 +50,24 @@ As a user of DiverSim, it is your responsibility to comply with the terms specif
 DiverSim was generated employing the AirSim Simulator on Unreal Engine 5 as part of the European project AWARE2ALL.
 
 ## Citation
-If you use DiverSim in your research, publications, or academic work, please cite this Github repository.
+If you use DiverSim in your research, publications, or academic work, please cite the following paper:
+```
+@inproceedings{IniguezDeGordoa2025,
+  author    = {Iñiguez de Gordoa, J. A. and Hormaetxea, M. and Nieto, M. and Vélez, G. and Mujika, A.},
+  title     = {DiverSim: A Customizable Simulation Tool to Generate Diverse Vulnerable Road User Datasets},
+  booktitle = {Proceedings of the 11th International Conference on Vehicle Technology and Intelligent Transport Systems},
+  year      = {2025},
+  isbn      = {978-989-758-745-0},
+  issn      = {2184-495X},
+  pages     = {17-24}
+}
+```
+Or in Harvard Citation Format:
+> Iñiguez de Gordoa, J. A.; Hormaetxea, M.; Nieto, M.; Vélez, G. and Mujika, A. (2025). DiverSim: A Customizable Simulation Tool to Generate Diverse Vulnerable Road User Datasets.  In _Proceedings of the 11th International Conference on Vehicle Technology and Intelligent Transport Systems_, ISBN 978-989-758-745-0, ISSN 2184-495X, pages 17-24.    
 
 ## Contact
 For any questions or inquiries regarding the DiverSim simulation tool, please contact jainiguez@vicomtech.org or mhormaetxea@vicomtech.org.
 
 ## Download links
-You can download the simulator executable here:
-[https://opendatasets.vicomtech.org/di21-diversim/ceb2d330](https://opendatasets.vicomtech.org/di21-diversim/ceb2d330)
+- You can download the simulator executable [here](https://opendatasets.vicomtech.org/di21-diversim/ceb2d330).
+- You can also download synthetic data samples generated with DiverSim [here](https://opendatasets.vicomtech.org/di21-diversim-example-data/9187bf5b).
