@@ -15,7 +15,8 @@ import json
 import utils
 
 class DiverSim_Recorder(object):
-    def __init__(self, sh_path, project_name, recording_path, colorsfile, mapillary_classes = None , numIdsPerVruClass = 1):
+    def __init__(self, sh_path, recording_path,project_name   = "Aware2All",
+                 colorsfile="etc/airsim_segmentation_palette.csv", mapillary_classes = None , numIdsPerVruClass = 1):
         '''
         Class to manage the data generation.
 
@@ -61,6 +62,7 @@ class DiverSim_Recorder(object):
         self.personClasses  = ["None", "white_cane", "crutches", "walking_frame", "walking_stick", "wheelchair"]
         self.edades         = ["Senior", "Adult", "Child"]
         self.races          = ["Asian", "Black", "MiddleEastern", "White"] 
+        self.skinColors     = ["Light", "Dark", "Dark", "Light"]
         self.numIdsPerClass = numIdsPerVruClass  
         self.numVruClasses = self.numIdsPerClass * len(self.genders) * len(self.personClasses) * len(self.edades) * len(self.races)
         # Found Actors List
@@ -417,7 +419,7 @@ class DiverSim_Recorder(object):
                     # Race
                     raceId       = ageId % numIdsPerAge
                     numIdsPerRace = self.numVruClasses / len(self.genders) / len(self.edades) / len(self.races)
-                    self.setAttributeFromClassId(raceId, numIdsPerRace, "race", uid)
+                    self.setAttributeFromClassId(raceId, numIdsPerRace, "skin", uid)
                     # Get VRU class
                     vruId        = raceId % numIdsPerRace
                     numIdsPerVru = self.numIdsPerClass
@@ -442,8 +444,8 @@ class DiverSim_Recorder(object):
             options = self.genders
         elif attribute_name == "age":
             options = self.edades
-        elif attribute_name == "race":
-            options = self.races
+        elif attribute_name == "skin":
+            options = self.skinColors
         elif attribute_name == "object":
             options = self.personClasses
         # Get Attribute Id
