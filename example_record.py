@@ -8,7 +8,6 @@ if __name__ == "__main__":
     video_seconds      = 40 # length of the recording, in seconds
     # Initialize Recorder
     recorder   = DiverSim_Recorder(sh_path        = "/home/unreal/Linux",
-                                    project_name   = "Aware2All",
                                     recording_path = "./Recordings", 
                                     colorsfile     = "etc/airsim_segmentation_palette.csv",
                                     )
