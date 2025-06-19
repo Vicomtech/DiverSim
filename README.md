@@ -70,4 +70,4 @@ For any questions or inquiries regarding the DiverSim simulation tool, please co
 
 ## Download links
 - You can download the simulator executable [here](https://opendatasets.vicomtech.org/di21-diversim/ceb2d330).
-- You can also download synthetic data samples generated with DiverSim [here](https://opendatasets.vicomtech.org/di21-diversim-example-data/9187bf5b).
+- You can download data samples generated with DiverSim [here](https://opendatasets.vicomtech.org/di21-diversim-example-data/9187bf5b).
